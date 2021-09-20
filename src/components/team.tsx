@@ -5,11 +5,13 @@ interface Props {
 }
 
 const Team = ({ team }: Props): JSX.Element => (
-  <div>
+  <div className="team">
     <h2>{team.name}</h2>
-    <div>
+    <div className="repositories">
       {team.repositories.nodes.map((repository) => (
-        <Repository key={repository.id} data={repository} />
+        <div key={repository.id} className="wrapper">
+          <Repository data={repository} />
+        </div>
       ))}
     </div>
   </div>

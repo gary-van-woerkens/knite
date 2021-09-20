@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color:rgb(249, 250, 251);
+}
+
+h2, h3, h4, h5 {
+  margin: 0;
+  padding: 0;
+}
+
+.teams {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.teams > .wrapper {
+  flex: 1 0 33.333%;
+  max-width: 33.333%;
+  outline: 1px solid black;
+}
+
+.team {
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 4px;
+  border: 1px solid rgb(229, 231, 235);
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+.repositories {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.repositories > .wrapper {
+  flex: 1 0 50%;
+  max-width: 50%;
+  outline: 1px solid black;
+}
+
+.repository {
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 4px;
+  border: 1px solid rgb(229, 231, 235);
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.release {
+  display: none;
+}

@@ -8,9 +8,13 @@ function Page() {
   return (
     <div>
       <h1>{organization.name}</h1>
-      {teams.map((team) => (
-        <Team key={team.id} team={team} />
-      ))}
+      <div className="teams">
+        {teams.map((team) => (
+          <div key={team.id} className="wrapper">
+            <Team team={team} />
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
