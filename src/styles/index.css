@@ -4,6 +4,10 @@ body {
   background-color:rgb(249, 250, 251);
 }
 
+h1 {
+  color: crimson;
+}
+
 h2, h3, h4, h5 {
   margin: 0;
   padding: 0;
