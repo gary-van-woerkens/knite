@@ -6,7 +6,7 @@ interface Props {
 }
 
 const Release = ({ data }: Props): JSX.Element => (
-  <div>
+  <div className="release">
     <div>Latest release: {data?.name}</div>
     <CheckSuite data={data?.tagCommit.checkSuites.nodes[0]} />
     <h4>Deployments ({data?.tagCommit.deployments.totalCount})</h4>

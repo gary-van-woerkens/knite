@@ -5,7 +5,7 @@ interface Props {
 }
 
 const Repository = ({ data }: Props): JSX.Element => (
-  <div>
+  <div className="repository">
     <h3>{data.name}</h3>
     <Release data={data.latestRelease} />
   </div>
